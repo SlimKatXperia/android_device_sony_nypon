@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit the proprietary counterpart
 $(call inherit-product-if-exists, vendor/sony/nypon/nypon-vendor.mk)
 
@@ -48,7 +51,7 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/fstab.st-ericsson:root/fstab.st-ericsson \
    $(LOCAL_PATH)/config/init.st-ericsson.device.rc:root/init.st-ericsson.device.rc \
    $(LOCAL_PATH)/prebuilt/logo-540x960.rle:root/logo.rle \
-   $(LOCAL_PATH)/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+   $(LOCAL_PATH)/../../../vendor/slim/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
 
 # Configuration scripts
 PRODUCT_COPY_FILES += \
