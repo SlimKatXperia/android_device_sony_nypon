@@ -23,7 +23,7 @@ USE_CAMERA_STUB := true
 -include device/sony/montblanc-common/BoardConfigCommon.mk
 
 # Target device Specific headers
-TARGET_SPECIFIC_HEADER_PATH := device/sony/nypon/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/nypon/include
 
 # Kernel Config
 TARGET_KERNEL_CONFIG := xperiap_defconfig
