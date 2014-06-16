@@ -132,7 +132,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.hwui.texture_cache_size=11 \
   ro.hwui.layer_cache_size=9 \
   ro.hwui.path_cache_size=3 \
-  ro.sf.lcd_density=250
+  ro.sf.lcd_density=240
 
 # Hardware video codecs configurations
 PRODUCT_PROPERTY_OVERRIDES += \
