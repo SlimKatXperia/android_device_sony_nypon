@@ -160,9 +160,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.semc.sols.product-code=105 \
   ro.semc.sols.company-code=5
-
-# OTA Updater
-PRODUCT_PROPERTY_OVERRIDES += otaupdater.otaid=buildid
-PRODUCT_PROPERTY_OVERRIDES += otaupdater.otaver=buildver
-PRODUCT_PROPERTY_OVERRIDES += otaupdater.otatime=buildtime
-PRODUCT_PACKAGES += OTAUpdater
