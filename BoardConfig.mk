@@ -37,6 +37,9 @@ BOARD_HAS_NO_REAL_SDCARD := true
 BOARD_HAS_SDCARD_INTERNAL := true
 TARGET_RECOVERY_FSTAB := device/sony/nypon/config/fstab.st-ericsson
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard0
+ 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 16
 
