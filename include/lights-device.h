@@ -21,11 +21,10 @@ char const*const LED_FILE_DELAYOFF[] = {
 };
 
 char const*const BUTTON_BACKLIGHT_FILE[] = {
+ "/sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness",
+ "/sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness",
+ "/sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness",
 };
-
-// "/sys/class/leds/so34-led0/brightness",
-// "/sys/class/leds/so34-led1/brightness",
-// "/sys/class/leds/so34-led2/brightness",
 
 char const*const ON = "timer";
 char const*const OFF = "timer";
