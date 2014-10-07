@@ -1,9 +1,9 @@
 #!/sbin/busybox sh
 
 # trigger button-backlight
-echo '255' > /sys/class/leds/so34-led0/brightness
-echo '255' > /sys/class/leds/so34-led1/brightness
-echo '255' > /sys/class/leds/so34-led2/brightness
+echo '255' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
+echo '255' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
+echo '255' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
 cat /dev/input/event1 > /dev/keycheck&
 sleep 3
 
@@ -11,8 +11,8 @@ sleep 3
 busybox echo '200' > /sys/class/timed_output/vibrator/enable
 
 # trigger button-backlight
-echo '0' > /sys/class/leds/so34-led0/brightness
-echo '0' > /sys/class/leds/so34-led1/brightness
-echo '0' > /sys/class/leds/so34-led2/brightness
+echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led0/brightness
+echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led1/brightness
+echo '0' > /sys/devices/platform/nmk-i2c.2/i2c-2/2-002c/leds/so34-led2/brightness
 
 kill -9 $!
